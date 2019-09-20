@@ -7,3 +7,7 @@ before_install:
 
 script:
   - docker run -e CI=true macborowy/docker-react npm run test -- --coverage
+
+deploy:
+  provider: azure_web_apps
+  verbose: true
